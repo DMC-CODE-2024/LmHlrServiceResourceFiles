@@ -22,15 +22,15 @@ mkdir -p ${DATA_HOME}/cdr_input/metfone/mf_hlr
 mkdir -p ${DATA_HOME}/cdr_input/smart/sm_hlr
 mkdir -p ${DATA_HOME}/cdr_input/seatel/st_hlr
 
-mkdir -p ${DATA_HOME}/eirsdata/hlr/st/processed/
-mkdir -p ${DATA_HOME}/eirsdata/hlr/sm/processed/
-mkdir -p ${DATA_HOME}/eirsdata/hlr/cc/processed/
-mkdir -p ${DATA_HOME}/eirsdata/hlr/vt/processed/
+mkdir -p ${DATA_HOME}/hlr/st/processed/
+mkdir -p ${DATA_HOME}/hlr/sm/processed/
+mkdir -p ${DATA_HOME}/hlr/cc/processed/
+mkdir -p ${DATA_HOME}/hlr/vt/processed/
 
-mkdir -p ${DATA_HOME}/eirsdata/hlr/st/delta/
-mkdir -p ${DATA_HOME}/eirsdata/hlr/sm/delta/
-mkdir -p ${DATA_HOME}/eirsdata/hlr/cc/delta/
-mkdir -p ${DATA_HOME}/eirsdata/hlr/vt/delta/
+mkdir -p ${DATA_HOME}/hlr/st/delta/
+mkdir -p ${DATA_HOME}/hlr/sm/delta/
+mkdir -p ${DATA_HOME}/hlr/cc/delta/
+mkdir -p ${DATA_HOME}/hlr/vt/delta/
 
 #uo3 Folder create 
 mkdir -p ${LOG_HOME}/list_management_module/lm_hlr/
