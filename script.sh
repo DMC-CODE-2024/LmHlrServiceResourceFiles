@@ -1,7 +1,6 @@
 #!/bin/bash
 
   # utility functions
-set -x
 
   # function to log messages
   log_message() {
