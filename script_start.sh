@@ -1,6 +1,5 @@
 #!/bin/bash
 source ~/.bash_profile
-set -x
 
 VAR=""
 operator="$1"
