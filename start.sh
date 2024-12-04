@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+
 module_name="lm_hlr"
 main_module="list_management" #keep it empty "" if there is no main module 
 log_level="INFO" # INFO, DEBUG, ERROR
