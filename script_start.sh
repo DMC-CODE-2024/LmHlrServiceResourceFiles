@@ -22,6 +22,14 @@ fi
 
 source $commonConfiguration
 
+ dbPassword=$(java -jar ${pass_dypt} spring.datasource.password)
+
+  if [ -z "$dbIp" ] || [ -z "$dbPort" ] || [ -z "$dbUsername" ] || [ -z "$dbPassword" ] ;
+    then
+      log_message "DB details missing, the script is terminated."
+      exit 1;
+  fi
+
 createNewFile() {
     local inputFile="$1"
     local outputFile="$2"
