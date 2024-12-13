@@ -44,7 +44,7 @@ createNewFile() {
 
 function mergeFiles() {
 
-  fileName=$1
+ local fileName=$1
   extractedFiles=($(tar -xzvf "$fileName"))
   baseFileName=$(basename "$fileName" ".tar.gz")
 
