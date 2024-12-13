@@ -111,7 +111,7 @@ fi
 if [ "$operator" == "ST" ]; then
   
 ### STARTS HERE
-  $operator=ST
+ 
   nextDateTag="nextProcessingDayHLR_$operator"
   echo "Tag for next day $nextDateTag"
   nextDateToProcess=$(mysql -h$dbIp -P$dbPort $appdbName -u$dbUsername  -p${dbPassword} -se "select value from sys_param where tag='$nextDateTag'")
