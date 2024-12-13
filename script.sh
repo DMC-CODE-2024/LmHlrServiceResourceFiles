@@ -141,7 +141,7 @@ EOFMYSQL
   # function to check if file size is still increasing (using sleep method)
 
   function checkFileUploadComplete() {
-      fullFileName=$1
+    local  fullFileName=$1
       initialFileSize=$(wc -c <"$fullFileName")
       sleep $initialTimer
       currentFileSize=$(wc -c <"$fullFileName")
@@ -157,10 +157,10 @@ EOFMYSQL
     }
 
   function getHeaderColumnNumber() {
-    fullFileName=$1
+    local fullFileName=$1
     headers=$2
     columnName=$3
-    fileSeparator=$4
+   local fileSeparator=$4
     columnNumber=$(echo "$headers" | awk -v target="$columnName" -v fileSeparator="${fileSeparator}" 'BEGIN {IGNORECASE=1; FS=fileSeparator} {
       for(i = 1; i<= NF; i++) {
         gsub(/^[[:space:]]+|[[:space:]]+$/, "", $i);
@@ -175,9 +175,9 @@ EOFMYSQL
 
   function checkPrefixInFile() {
     dbValues=$1
-    fullFileName=$2
+ local   fullFileName=$2
     columnNumber=$3
-    fileSeparator=$4
+  local  fileSeparator=$4
     error_found=0
     echo "$fullFileName $dbValues $fileSeparator $columnNumber"
     IFS=',' read -ra values <<< "$dbValues"
@@ -228,8 +228,8 @@ NR == 1 { next }
   }
 
   function nullValueValidation() {
-    fileSeparator=$1
-    fullFileName=$2
+local  fileSeparator=$1
+ local  fullFileName=$2
     imsiColumnNumber=$3
     msisdnColumnNumber=$4
     log_message "$fullFileName $fileSeparator"
