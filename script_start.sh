@@ -154,7 +154,7 @@ if [ "$operator" == "ST" ]; then
         echo "Updating Process Date"
 
 ### STARTS HERE
-  $frequency=1
+  frequency=1
   differenceSeconds=$(($currentDateTimestamp - $nextDateToProcessTimestamp))
   differenceDays=$((differenceSeconds / (24 * 3600)))
   echo "Number of days between nextDateToProcess and currentDate: $differenceDays"
