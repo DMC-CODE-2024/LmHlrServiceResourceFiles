@@ -4,14 +4,16 @@ source ~/.bash_profile
 VAR=""
 operator="$1"
 log_level="INFO"
-log_path="${LOG_HOME}/list_management_module/hlr/${operator}"
+build_name="lm_hlr"
+module_name="list_management_module"
+log_path="${LOG_HOME}/${module_name}/${build_name}/${operator}"
 module_name="hlr_${operator}"
 propertiesFile="script_${operator}.properties"
 . "$propertiesFile"
-build_path="${APP_HOME}/list_management_module/lm_hlr/"
+build_path="${APP_HOME}/${module_name}/${build_name}/"
 build="script.sh"
-build_name="lm_hlr"
-script_path="${APP_HOME}/list_management_module/lm_hlr/script/"
+
+script_path="${APP_HOME}/${module_name}/${build_name}/script/"
 commonConfiguration=$commonConfigurationFile
 if [ ! -e "$commonConfiguration" ]
   then
