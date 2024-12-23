@@ -1,7 +1,4 @@
 #!/bin/bash
-#set -x
-
-
 tar -xzvf lm_hlr_1.0.0.tar.gz >>lm_hlr_1.0.0_untar_log.txt
 mkdir -p ${APP_HOME}/list_management_module/lm_hlr/
 
@@ -22,16 +19,10 @@ mkdir -p ${DATA_HOME}/cdr_input/metfone/mf_hlr
 mkdir -p ${DATA_HOME}/cdr_input/smart/sm_hlr
 mkdir -p ${DATA_HOME}/cdr_input/seatel/st_hlr
 
-mkdir -p ${DATA_HOME}/hlr/st/processed/
-mkdir -p ${DATA_HOME}/hlr/sm/processed/
-mkdir -p ${DATA_HOME}/hlr/cc/processed/
-mkdir -p ${DATA_HOME}/hlr/vt/processed/
+mkdir -p ${DATA_HOME}/list_management_module/lm_hlr/seatel/processed/
+mkdir -p ${DATA_HOME}/list_management_module/lm_hlr/smart/processed/
+mkdir -p ${DATA_HOME}/list_management_module/lm_hlr/cellcard/processed/
+mkdir -p ${DATA_HOME}/list_management_module/lm_hlr/metfone/processed/
 
-mkdir -p ${DATA_HOME}/hlr/st/delta/
-mkdir -p ${DATA_HOME}/hlr/sm/delta/
-mkdir -p ${DATA_HOME}/hlr/cc/delta/
-mkdir -p ${DATA_HOME}/hlr/vt/delta/
-
-#uo3 Folder create 
 mkdir -p ${LOG_HOME}/list_management_module/lm_hlr/
 
