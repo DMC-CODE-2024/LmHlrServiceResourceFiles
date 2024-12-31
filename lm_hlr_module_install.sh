@@ -2,7 +2,6 @@
 tar -xzvf lm_hlr_1.0.0.tar.gz >>lm_hlr_1.0.0_untar_log.txt
 mkdir -p ${APP_HOME}/list_management_module/lm_hlr/
 
-#list_management_module/lm_hlr
 mv lm_hlr_1.0.0/lm_hlr_1.0.0.jar ${RELEASE_HOME}/binary/
 
 mv lm_hlr_1.0.0/*  ${APP_HOME}/list_management_module/lm_hlr/
