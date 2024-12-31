@@ -8,7 +8,6 @@ main_name="list_management_module"
 log_path="${LOG_HOME}/${main_name}/${module_name}/"
 
 ########### DO NOT CHANGE ANY CODE OR TEXT AFTER THIS LINE #########
-
 echo "Starting process module for all operator....."
 
 cd ./script/
