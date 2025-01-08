@@ -8,6 +8,13 @@ build_name="lm_hlr"
 module_name="list_management_module"
 
 propertiesFile="script_${operator}.properties"
+
+if [ ! -e "$propertiesFile" ]
+  then
+    log_message "$propertiesFile file not found ,the script is terminated."
+    exit 1;
+fi
+
 . "$propertiesFile"
 
 log_path="${LOG_HOME}/${module_name}/${build_name}/${operator_name}"
